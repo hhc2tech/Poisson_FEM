@@ -19,3 +19,6 @@
 \form#18:\[ something \]
 \form#19:$u\in H_{0}^{1}$
 \form#20:\[ \int_{\Omega}\nabla v\cdot\nabla u\ dx=\int_{\Omega}v\sin\left(\pi x\right)dx\ \forall v\in H_{0}^{1} \]
+\form#21:\[ * \Delta u = \sin(\pi x)\ on\ \Omega, * u = 0\ on\ \partial\Omega * \]
+\form#22:\[ * \int_{\Omega}\nabla v\cdot\nabla u\ dx=\int_{\Omega}v\sin\left(\pi x\right)dx\ \forall v\in H_{0}^{1} * \]
+\form#23:$Kx=F$
