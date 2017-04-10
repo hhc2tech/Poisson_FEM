@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled.dir/compute_dj.cpp.o"
   "CMakeFiles/untitled.dir/compute_dji.cpp.o"
   "CMakeFiles/untitled.dir/compute_dfx.cpp.o"
+  "CMakeFiles/untitled.dir/set_mesh.cpp.o"
+  "CMakeFiles/untitled.dir/set_bc.cpp.o"
+  "CMakeFiles/untitled.dir/set_connectivity.cpp.o"
   "untitled.pdb"
   "untitled"
 )

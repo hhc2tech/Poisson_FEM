@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/pkjain/Desktop/Poisson_Cplusplus
+CMAKE_SOURCE_DIR = /Users/pkjain/Desktop/Poisson_FEM
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/untitled.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/untitled.dir/flags.make
 
 CMakeFiles/untitled.dir/main.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/main.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/untitled.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/main.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/main.cpp
 
 CMakeFiles/untitled.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/main.cpp > CMakeFiles/untitled.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/main.cpp > CMakeFiles/untitled.dir/main.cpp.i
 
 CMakeFiles/untitled.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/main.cpp -o CMakeFiles/untitled.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/main.cpp -o CMakeFiles/untitled.dir/main.cpp.s
 
 CMakeFiles/untitled.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/untitled.dir/main.cpp.o.provides.build: CMakeFiles/untitled.dir/main.
 
 CMakeFiles/untitled.dir/compute_shape.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/compute_shape.cpp.o: ../compute_shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/compute_shape.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_shape.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/compute_shape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/untitled.dir/compute_shape.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_shape.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/compute_shape.cpp
 
 CMakeFiles/untitled.dir/compute_shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/compute_shape.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/compute_shape.cpp > CMakeFiles/untitled.dir/compute_shape.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/compute_shape.cpp > CMakeFiles/untitled.dir/compute_shape.cpp.i
 
 CMakeFiles/untitled.dir/compute_shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/compute_shape.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/compute_shape.cpp -o CMakeFiles/untitled.dir/compute_shape.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/compute_shape.cpp -o CMakeFiles/untitled.dir/compute_shape.cpp.s
 
 CMakeFiles/untitled.dir/compute_shape.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/untitled.dir/compute_shape.cpp.o.provides.build: CMakeFiles/untitled.
 
 CMakeFiles/untitled.dir/compute_dfxi.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/compute_dfxi.cpp.o: ../compute_dfxi.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/compute_dfxi.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dfxi.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfxi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/untitled.dir/compute_dfxi.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dfxi.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/compute_dfxi.cpp
 
 CMakeFiles/untitled.dir/compute_dfxi.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/compute_dfxi.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfxi.cpp > CMakeFiles/untitled.dir/compute_dfxi.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/compute_dfxi.cpp > CMakeFiles/untitled.dir/compute_dfxi.cpp.i
 
 CMakeFiles/untitled.dir/compute_dfxi.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/compute_dfxi.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfxi.cpp -o CMakeFiles/untitled.dir/compute_dfxi.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/compute_dfxi.cpp -o CMakeFiles/untitled.dir/compute_dfxi.cpp.s
 
 CMakeFiles/untitled.dir/compute_dfxi.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/untitled.dir/compute_dfxi.cpp.o.provides.build: CMakeFiles/untitled.d
 
 CMakeFiles/untitled.dir/compute_dj.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/compute_dj.cpp.o: ../compute_dj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/compute_dj.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dj.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/untitled.dir/compute_dj.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dj.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/compute_dj.cpp
 
 CMakeFiles/untitled.dir/compute_dj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/compute_dj.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dj.cpp > CMakeFiles/untitled.dir/compute_dj.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/compute_dj.cpp > CMakeFiles/untitled.dir/compute_dj.cpp.i
 
 CMakeFiles/untitled.dir/compute_dj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/compute_dj.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dj.cpp -o CMakeFiles/untitled.dir/compute_dj.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/compute_dj.cpp -o CMakeFiles/untitled.dir/compute_dj.cpp.s
 
 CMakeFiles/untitled.dir/compute_dj.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/untitled.dir/compute_dj.cpp.o.provides.build: CMakeFiles/untitled.dir
 
 CMakeFiles/untitled.dir/compute_dji.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/compute_dji.cpp.o: ../compute_dji.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/compute_dji.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dji.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dji.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/compute_dji.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dji.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/compute_dji.cpp
 
 CMakeFiles/untitled.dir/compute_dji.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/compute_dji.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dji.cpp > CMakeFiles/untitled.dir/compute_dji.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/compute_dji.cpp > CMakeFiles/untitled.dir/compute_dji.cpp.i
 
 CMakeFiles/untitled.dir/compute_dji.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/compute_dji.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dji.cpp -o CMakeFiles/untitled.dir/compute_dji.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/compute_dji.cpp -o CMakeFiles/untitled.dir/compute_dji.cpp.s
 
 CMakeFiles/untitled.dir/compute_dji.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/untitled.dir/compute_dji.cpp.o.provides.build: CMakeFiles/untitled.di
 
 CMakeFiles/untitled.dir/compute_dfx.cpp.o: CMakeFiles/untitled.dir/flags.make
 CMakeFiles/untitled.dir/compute_dfx.cpp.o: ../compute_dfx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/compute_dfx.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dfx.cpp.o -c /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfx.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/compute_dfx.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/compute_dfx.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/compute_dfx.cpp
 
 CMakeFiles/untitled.dir/compute_dfx.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/compute_dfx.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfx.cpp > CMakeFiles/untitled.dir/compute_dfx.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/compute_dfx.cpp > CMakeFiles/untitled.dir/compute_dfx.cpp.i
 
 CMakeFiles/untitled.dir/compute_dfx.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/compute_dfx.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_Cplusplus/compute_dfx.cpp -o CMakeFiles/untitled.dir/compute_dfx.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/compute_dfx.cpp -o CMakeFiles/untitled.dir/compute_dfx.cpp.s
 
 CMakeFiles/untitled.dir/compute_dfx.cpp.o.requires:
 
@@ -201,6 +201,78 @@ CMakeFiles/untitled.dir/compute_dfx.cpp.o.provides: CMakeFiles/untitled.dir/comp
 CMakeFiles/untitled.dir/compute_dfx.cpp.o.provides.build: CMakeFiles/untitled.dir/compute_dfx.cpp.o
 
 
+CMakeFiles/untitled.dir/set_mesh.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/set_mesh.cpp.o: ../set_mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/untitled.dir/set_mesh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/set_mesh.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/set_mesh.cpp
+
+CMakeFiles/untitled.dir/set_mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/set_mesh.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/set_mesh.cpp > CMakeFiles/untitled.dir/set_mesh.cpp.i
+
+CMakeFiles/untitled.dir/set_mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/set_mesh.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/set_mesh.cpp -o CMakeFiles/untitled.dir/set_mesh.cpp.s
+
+CMakeFiles/untitled.dir/set_mesh.cpp.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/set_mesh.cpp.o.requires
+
+CMakeFiles/untitled.dir/set_mesh.cpp.o.provides: CMakeFiles/untitled.dir/set_mesh.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/set_mesh.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/set_mesh.cpp.o.provides
+
+CMakeFiles/untitled.dir/set_mesh.cpp.o.provides.build: CMakeFiles/untitled.dir/set_mesh.cpp.o
+
+
+CMakeFiles/untitled.dir/set_bc.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/set_bc.cpp.o: ../set_bc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/untitled.dir/set_bc.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/set_bc.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/set_bc.cpp
+
+CMakeFiles/untitled.dir/set_bc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/set_bc.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/set_bc.cpp > CMakeFiles/untitled.dir/set_bc.cpp.i
+
+CMakeFiles/untitled.dir/set_bc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/set_bc.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/set_bc.cpp -o CMakeFiles/untitled.dir/set_bc.cpp.s
+
+CMakeFiles/untitled.dir/set_bc.cpp.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/set_bc.cpp.o.requires
+
+CMakeFiles/untitled.dir/set_bc.cpp.o.provides: CMakeFiles/untitled.dir/set_bc.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/set_bc.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/set_bc.cpp.o.provides
+
+CMakeFiles/untitled.dir/set_bc.cpp.o.provides.build: CMakeFiles/untitled.dir/set_bc.cpp.o
+
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/set_connectivity.cpp.o: ../set_connectivity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/untitled.dir/set_connectivity.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/untitled.dir/set_connectivity.cpp.o -c /Users/pkjain/Desktop/Poisson_FEM/set_connectivity.cpp
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/set_connectivity.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pkjain/Desktop/Poisson_FEM/set_connectivity.cpp > CMakeFiles/untitled.dir/set_connectivity.cpp.i
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/set_connectivity.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pkjain/Desktop/Poisson_FEM/set_connectivity.cpp -o CMakeFiles/untitled.dir/set_connectivity.cpp.s
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.o.requires:
+
+.PHONY : CMakeFiles/untitled.dir/set_connectivity.cpp.o.requires
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.o.provides: CMakeFiles/untitled.dir/set_connectivity.cpp.o.requires
+	$(MAKE) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/set_connectivity.cpp.o.provides.build
+.PHONY : CMakeFiles/untitled.dir/set_connectivity.cpp.o.provides
+
+CMakeFiles/untitled.dir/set_connectivity.cpp.o.provides.build: CMakeFiles/untitled.dir/set_connectivity.cpp.o
+
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/main.cpp.o" \
@@ -208,7 +280,10 @@ untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/compute_dfxi.cpp.o" \
 "CMakeFiles/untitled.dir/compute_dj.cpp.o" \
 "CMakeFiles/untitled.dir/compute_dji.cpp.o" \
-"CMakeFiles/untitled.dir/compute_dfx.cpp.o"
+"CMakeFiles/untitled.dir/compute_dfx.cpp.o" \
+"CMakeFiles/untitled.dir/set_mesh.cpp.o" \
+"CMakeFiles/untitled.dir/set_bc.cpp.o" \
+"CMakeFiles/untitled.dir/set_connectivity.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -219,9 +294,12 @@ untitled: CMakeFiles/untitled.dir/compute_dfxi.cpp.o
 untitled: CMakeFiles/untitled.dir/compute_dj.cpp.o
 untitled: CMakeFiles/untitled.dir/compute_dji.cpp.o
 untitled: CMakeFiles/untitled.dir/compute_dfx.cpp.o
+untitled: CMakeFiles/untitled.dir/set_mesh.cpp.o
+untitled: CMakeFiles/untitled.dir/set_bc.cpp.o
+untitled: CMakeFiles/untitled.dir/set_connectivity.cpp.o
 untitled: CMakeFiles/untitled.dir/build.make
 untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -235,6 +313,9 @@ CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/compute_dfxi.cpp.o.req
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/compute_dj.cpp.o.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/compute_dji.cpp.o.requires
 CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/compute_dfx.cpp.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/set_mesh.cpp.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/set_bc.cpp.o.requires
+CMakeFiles/untitled.dir/requires: CMakeFiles/untitled.dir/set_connectivity.cpp.o.requires
 
 .PHONY : CMakeFiles/untitled.dir/requires
 
@@ -243,6 +324,6 @@ CMakeFiles/untitled.dir/clean:
 .PHONY : CMakeFiles/untitled.dir/clean
 
 CMakeFiles/untitled.dir/depend:
-	cd /Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pkjain/Desktop/Poisson_Cplusplus /Users/pkjain/Desktop/Poisson_Cplusplus /Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug /Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug /Users/pkjain/Desktop/Poisson_Cplusplus/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pkjain/Desktop/Poisson_FEM /Users/pkjain/Desktop/Poisson_FEM /Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug /Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug /Users/pkjain/Desktop/Poisson_FEM/cmake-build-debug/CMakeFiles/untitled.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/untitled.dir/depend
 

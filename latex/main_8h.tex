@@ -1,0 +1,60 @@
+\hypertarget{main_8h}{}\section{main.\+h File Reference}
+\label{main_8h}\index{main.\+h@{main.\+h}}
+{\ttfamily \#include \char`\"{}Eigen/\+Dense\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcoordinate}{coordinate}
+\item 
+struct \hyperlink{structconnectivity}{connectivity}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{main_8h_a3c43ab437da5734d84f86c2fb0f40a80}{compute\+\_\+shape} (double zi, double eta)
+\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{main_8h_a3527581e4477e70a4df0db94ba3b587d}{compute\+\_\+dfxi} (double zi, double eta, int nnode, int ndim)
+\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{main_8h_a12663a89f447c98cda4baa22634b2f74}{compute\+\_\+dj} (const Eigen\+::\+Matrix\+Xd \&xt, double x\+\_\+g, double y\+\_\+g, int nnode, int ndim)
+\begin{DoxyCompactList}\small\item\em compute\+\_\+dj \end{DoxyCompactList}\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{main_8h_a676330111494f86bb3ba6237cd9aabe2}{compute\+\_\+dji} (const Eigen\+::\+Matrix\+Xd \&xt, double x\+\_\+g, double y\+\_\+g, int nnode, int ndim)
+\item 
+Eigen\+::\+Matrix\+Xd \hyperlink{main_8h_a62ab95033196d1f20180f82bdf117a98}{compute\+\_\+dfx} (const Eigen\+::\+Matrix\+Xd \&xt, double x\+\_\+g, double y\+\_\+g, int nnode, int ndim)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8h_a62ab95033196d1f20180f82bdf117a98}\label{main_8h_a62ab95033196d1f20180f82bdf117a98}} 
+\index{main.\+h@{main.\+h}!compute\+\_\+dfx@{compute\+\_\+dfx}}
+\index{compute\+\_\+dfx@{compute\+\_\+dfx}!main.\+h@{main.\+h}}
+\subsubsection{\texorpdfstring{compute\+\_\+dfx()}{compute\_dfx()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd compute\+\_\+dfx (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Xd \&}]{xt,  }\item[{double}]{x\+\_\+g,  }\item[{double}]{y\+\_\+g,  }\item[{int}]{nnode,  }\item[{int}]{ndim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a3527581e4477e70a4df0db94ba3b587d}\label{main_8h_a3527581e4477e70a4df0db94ba3b587d}} 
+\index{main.\+h@{main.\+h}!compute\+\_\+dfxi@{compute\+\_\+dfxi}}
+\index{compute\+\_\+dfxi@{compute\+\_\+dfxi}!main.\+h@{main.\+h}}
+\subsubsection{\texorpdfstring{compute\+\_\+dfxi()}{compute\_dfxi()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd compute\+\_\+dfxi (\begin{DoxyParamCaption}\item[{double}]{zi,  }\item[{double}]{eta,  }\item[{int}]{nnode,  }\item[{int}]{ndim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a12663a89f447c98cda4baa22634b2f74}\label{main_8h_a12663a89f447c98cda4baa22634b2f74}} 
+\index{main.\+h@{main.\+h}!compute\+\_\+dj@{compute\+\_\+dj}}
+\index{compute\+\_\+dj@{compute\+\_\+dj}!main.\+h@{main.\+h}}
+\subsubsection{\texorpdfstring{compute\+\_\+dj()}{compute\_dj()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd compute\+\_\+dj (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Xd \&}]{xt,  }\item[{double}]{x\+\_\+g,  }\item[{double}]{y\+\_\+g,  }\item[{int}]{nnode,  }\item[{int}]{ndim }\end{DoxyParamCaption})}
+
+
+
+compute\+\_\+dj 
+
+Detailed description \mbox{\Hypertarget{main_8h_a676330111494f86bb3ba6237cd9aabe2}\label{main_8h_a676330111494f86bb3ba6237cd9aabe2}} 
+\index{main.\+h@{main.\+h}!compute\+\_\+dji@{compute\+\_\+dji}}
+\index{compute\+\_\+dji@{compute\+\_\+dji}!main.\+h@{main.\+h}}
+\subsubsection{\texorpdfstring{compute\+\_\+dji()}{compute\_dji()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd compute\+\_\+dji (\begin{DoxyParamCaption}\item[{const Eigen\+::\+Matrix\+Xd \&}]{xt,  }\item[{double}]{x\+\_\+g,  }\item[{double}]{y\+\_\+g,  }\item[{int}]{nnode,  }\item[{int}]{ndim }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8h_a3c43ab437da5734d84f86c2fb0f40a80}\label{main_8h_a3c43ab437da5734d84f86c2fb0f40a80}} 
+\index{main.\+h@{main.\+h}!compute\+\_\+shape@{compute\+\_\+shape}}
+\index{compute\+\_\+shape@{compute\+\_\+shape}!main.\+h@{main.\+h}}
+\subsubsection{\texorpdfstring{compute\+\_\+shape()}{compute\_shape()}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd compute\+\_\+shape (\begin{DoxyParamCaption}\item[{double}]{zi,  }\item[{double}]{eta }\end{DoxyParamCaption})}
+

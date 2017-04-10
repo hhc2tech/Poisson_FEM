@@ -1,0 +1,18 @@
+\hypertarget{index_intro_sec}{}\section{Introduction}\label{index_intro_sec}
+This code uses the Finite element method to solve the Poisson heat equation with a source term on a rectangular domain.
+
+The P\+DE is \[ \Delta u = \sin(\pi x)\ on\ \Omega, u = 0\ on\ \partial\Omega \]
+
+where $ \Omega = {(x,y):0<x<2,0<y<1}$ and $\partial\Omega$ is the boundary of $\Omega$.
+
+Bilinear rectangular element is used.\hypertarget{index_install_sec}{}\section{Weak form}\label{index_install_sec}
+Find $u\in H_{0}^{1}$ such that \[ \int_{\Omega}\nabla v\cdot\nabla u\ dx=\int_{\Omega}v\sin\left(\pi x\right)dx\ \forall v\in H_{0}^{1} \]\hypertarget{index_steps}{}\section{Steps}\label{index_steps}
+
+\begin{DoxyEnumerate}
+\item Set the computational domain -\/ Mesh, connectivity and boundary conditions
+\item Set quadrautre integration method
+\item Loop over every element to calculate local force and local stiffness
+\item Assemble local stiffness and local force to global stiffness $(K)$ and global force $(F)$ respectively
+\item Apply boundary conditions
+\item Solve $(Kx=F)$ 
+\end{DoxyEnumerate}

@@ -1,0 +1,21 @@
+\form#0:\[ |I_2|=\left| \int_{0}^T \psi(t) \left\{ u(a,t)- \int_{\gamma(t)}^a \frac{d\theta}{k(\theta,t)} \int_{a}^\theta c(\xi)u_t(\xi,t)\,d\xi \right\} dt \right| \]
+\form#1:\[ \Deltau = \sin{x} \]
+\form#2:\[ \Delta = \sin{x} \]
+\form#3:\[ \Delta u=\sin(x) \]
+\form#4:\[ \Delta u=\sin(x) on \Omega u = 0 on \partial\Omega \]
+\form#5:\[ \Delta u=\sin(x)\ on\ \Omega u=0\ on\ \partial\Omega \]
+\form#6:\[ \Delta u=\sin(x)\ on\ \Omega \]
+\form#7:\[ u=0\ on\ \partial\Omega \]
+\form#8:\[ *\Delta u = \sin(\pi x)\ on\ \Omega u = 0\ on\ \partial\Omega \]
+\form#9:$ \Omega = {(x,y):0<x<2,0<y<1}$
+\form#10:$\partial\Omega$
+\form#11:$\Omega$
+\form#12:\[ \Delta u = \sin(\pi x)\ on\ \Omega,\\ u = 0\ on\ \partial\Omega \]
+\form#13:\[ \Delta u = \sin(\pi x)\ on\ \Omega, u = 0\ on\ \partial\Omega \]
+\form#14:\[ -\nabla \cdot (K \cdot \nabla T) = Q, \quad \text{in } \Omega = (-0.5,0.5)^2. \]
+\form#15:$(K)$
+\form#16:$(F)$
+\form#17:$(Kx=F)$
+\form#18:\[ something \]
+\form#19:$u\in H_{0}^{1}$
+\form#20:\[ \int_{\Omega}\nabla v\cdot\nabla u\ dx=\int_{\Omega}v\sin\left(\pi x\right)dx\ \forall v\in H_{0}^{1} \]

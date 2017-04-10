@@ -1,3 +1,47 @@
+/*! \mainpage Mainpage
+ *
+ * \section intro_sec Introduction
+ *
+ * This code uses the Finite element method to solve the Poisson heat equation with a source term
+ * on a rectangular domain.
+ *
+ * The PDE is
+ * \f[
+ * \Delta u = \sin(\pi x)\ on\ \Omega,
+ * u = 0\ on\ \partial\Omega
+ * \f]
+ *
+ * where \f$ \Omega = {(x,y):0<x<2,0<y<1}\f$ and \f$\partial\Omega\f$ is the boundary of \f$\Omega\f$.
+ *
+ * Bilinear rectangular element is used.
+ *
+ * \section install_sec Weak form
+ *
+ * Find \f$u\in H_{0}^{1}\f$ such that
+ * \f[
+ * \int_{\Omega}\nabla v\cdot\nabla u\ dx=\int_{\Omega}v\sin\left(\pi x\right)dx\ \forall v\in H_{0}^{1}
+ * \f]
+ *
+ * \section steps Steps
+ *
+ *   -# Set the computational domain - Mesh, connectivity and boundary conditions
+ *   -# Set quadrautre integration method
+ *   -# Loop over every element to calculate local force and local stiffness
+ *   -# Assemble local stiffness and local force to global stiffness \f$(K)\f$ and global force \f$(F)\f$ respectively
+ *   -# Apply boundary conditions
+ *   -# Solve \f$(Kx=F)\f$
+ */
+
+/**
+ *  @file    main.cpp
+ *  @author  Pushkar Kumar Jain (pushkarjain1991@utexas.edu)
+ *  @date    4/9/2017
+ *  @version 1.0
+ *
+ *  @brief The main program to feed inputs and run
+ *
+ */
+
 #include <iostream>
 #include <math.h>
 #include <vector>
@@ -5,37 +49,31 @@
 #include <unsupported/Eigen/MatrixFunctions>
 #include "main.h"
 
+
 int main() {
-    //const double pi = std::acos(-1.0);
-    double x_start, x_end, y_start, y_end, h;
-    int nnode, ndim;
-    int num_gauss_quad_points;
     double zi_1[2], eta_1[2];
-    int num_nodes_x, num_nodes_y, nj, nelem;
-    double x_coordinate, y_coordinate;
     double J_dx_dy;
     int IG, JG;
     int iter1, iter2;
 
     // Input conditions for rectangular domain
-    x_start = 0.0;
-    x_end = 2.0;
-    y_start = 0.0;
-    y_end = 1.0;
-    h = 0.25;
+    const double x_start = 0.0; // Initial point in domain in x direction
+    const double x_end = 2.0; // Final point in domain in x direction
+    const double y_start = 0.0; // Initial point in domain in y direction
+    const double y_end = 1.0; // Final point in domain in y direction
+    const double h = 0.25; // Domain spacing
 
     // FEM input conditions
-    // Choosing rectangular elements
-    nnode = 4;
-    ndim = 2;
+    // Choosing rectangular elements parameters
+    const int nnode = 4; // Rectangular elements have 4 nodes
+    const int ndim = 2; // 2 dimensions x and y
 
-    //Integration input conditions
+    //Integration parameters
     zi_1[0] = -1.0 / sqrt(3.0);
     zi_1[1] = 1.0 / sqrt(3.0);
     eta_1[0] = -1.0 / sqrt(3.0);
     eta_1[1] = 1.0 / sqrt(3.0);
-    num_gauss_quad_points = 4;
-
+    const int num_gauss_quad_points = 4; // Number of Gauss points for integration;
 
     std::vector<coordinate> gauss_points(num_gauss_quad_points);
     int counter = 0;
@@ -47,52 +85,22 @@ int main() {
         }
     }
 
-    num_nodes_x = static_cast<int> (floor((x_end - x_start) / h) + 1);
-    num_nodes_y = static_cast<int> (floor((y_end - y_start) / h) + 1);
-    nj = num_nodes_x * num_nodes_y;
-    nelem = (num_nodes_x - 1) * (num_nodes_y - 1);
+    const int num_nodes_x = static_cast<int> (floor((x_end - x_start) / h) + 1); // Number of nodes in x
+    const int num_nodes_y = static_cast<int> (floor((y_end - y_start) / h) + 1); // Number of nodes in y
+    const int nj = num_nodes_x * num_nodes_y; // Total number of nodes
+    const int nelem = (num_nodes_x - 1) * (num_nodes_y - 1); // Total number of elements
 
-
+    // Setting up the mesh
     std::vector<coordinate> mesh(nj);
-    y_coordinate = y_start;
-    counter = 0;
-    for (int i = 0; i < num_nodes_y; ++i) {
-        x_coordinate = x_start;
+    mesh = set_mesh(x_start, y_start, num_nodes_x, num_nodes_y, nj, h);
 
-        for (int j = 0; j < num_nodes_x; ++j) {
-            mesh[counter].y = y_coordinate;
-            mesh[counter].x = x_coordinate;
-            x_coordinate += h;
-            counter++;
-        }
-        y_coordinate += h;
-    }
-
-    // Assign BC
+    // Setting boundary conditions
     std::vector<int> id(nj);
-    counter = 0;
-    for (int i = 0; i < num_nodes_y; ++i) {
-        for (int j = 0; j < num_nodes_x; ++j) {
-            (i == 0 || i == num_nodes_y - 1 || j == 0 || j == num_nodes_x - 1) ? id[counter] = 1 : id[counter] = 0;
-            counter++;
-        }
-    }
+    id = set_bc(num_nodes_x, num_nodes_y);
 
-    // Setting the connectivity
+    // Setting connectivity
     std::vector<connectivity> inode(nelem);
-    iter1 = 0;
-    iter2 = 0;
-    for (int element_num = 0; element_num < nelem; ++element_num) {
-        inode[element_num].node[0] = iter1 + iter2 * (num_nodes_x);
-        inode[element_num].node[1] = inode[element_num].node[0] + 1;
-        inode[element_num].node[2] = inode[element_num].node[1] + num_nodes_x;
-        inode[element_num].node[3] = inode[element_num].node[2] - 1;
-        iter1++;
-        if ((element_num + 1) % (num_nodes_x - 1) == 0) {
-            iter1 = 0;
-            iter2++;
-        }
-    }
+    inode = set_connectivity(nelem, num_nodes_x);
 
     Eigen::MatrixXd global_k(nj, nj); // Initializing global stiffness
     global_k.setZero();
@@ -161,6 +169,4 @@ int main() {
     std::cout << solution;
 
     return 0;
-
-
 }
