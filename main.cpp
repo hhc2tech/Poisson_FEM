@@ -11,7 +11,7 @@
  * u = 0\ on\ \partial\Omega
  * \f]
  *
- * where \f$ \Omega = {(x,y):0<x<2,0<y<1}\f$ and \f$\partial\Omega\f$ is the boundary of \f$\Omega\f$.
+ * where \f$ \Omega = {(x,y):0 \leq x \leq 2,0 \leq y \leq 1}\f$ and \f$\partial\Omega\f$ is the boundary of \f$\Omega\f$.
  *
  * Bilinear rectangular element is used.
  *
